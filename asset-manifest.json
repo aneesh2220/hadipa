@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/hadipa/static/css/main.09ecaaf0.css",
+    "main.js": "/hadipa/static/js/main.83cd41f8.js",
+    "static/js/453.55bfa55f.chunk.js": "/hadipa/static/js/453.55bfa55f.chunk.js",
+    "index.html": "/hadipa/index.html",
+    "main.09ecaaf0.css.map": "/hadipa/static/css/main.09ecaaf0.css.map",
+    "main.83cd41f8.js.map": "/hadipa/static/js/main.83cd41f8.js.map",
+    "453.55bfa55f.chunk.js.map": "/hadipa/static/js/453.55bfa55f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.09ecaaf0.css",
+    "static/js/main.83cd41f8.js"
+  ]
+}
