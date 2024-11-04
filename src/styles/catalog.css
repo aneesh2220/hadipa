@@ -1,0 +1,178 @@
+.catalog {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  min-height: 100vh;
+  min-width: 100vh;
+}
+
+.headX {
+  width: 100%;
+  height: 60px;
+  background-color: black;
+  display: flex;
+  /* gap: 50px; */
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.headX h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  color: red;
+  font-size: 2.9rem;
+  margin: 0;
+  margin-left: 45%;
+  margin-top: 7px;
+}
+
+.headX button {
+  color: white;
+  cursor: pointer;
+  background-color: black;
+  height: 70px;
+  width: 70px;
+  border: none;
+  text-align: center;
+  size: 2rem;
+  font-size: 1rem;
+  padding: 4px;
+  font-weight: 400;
+}
+
+.headX .nav-list {
+  margin-left: 30%;
+  gap: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+}
+
+.headX .nav-list .home {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border-radius: 100px;
+  height: 3rem;
+  width: 5rem;
+  cursor: pointer;
+}
+
+.movies-row1 {
+  background-color: black;
+  width: 100%;
+  height: 300px;
+  margin-top: 100px;
+  position: relative;
+}
+
+.movies-row1 div {
+  border-radius: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.movies-row1 div:hover {
+  transform: scale(1.1);
+}
+
+.movies-row1 .movie-1 {
+  background-color: yellow;
+  height: 190px;
+  width: 150px;
+  position: absolute;
+  bottom: 90px;
+  left: 60px;
+  object-fit: contain;
+  overflow: hidden;
+  background-position: center;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9A3EFxcN9DdYFdzfCTe6S5sy3X7J1em5IYQ&s);
+}
+
+.movies-row1 .movie-2 {
+  background-color: yellow;
+  height: 180px;
+  width: 120px;
+  position: absolute;
+  bottom: 90px;
+  left: 400px;
+  object-fit: contain;
+  overflow: hidden;
+  background-position: center;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVfaCD49V6dYtzjHxwfGblNMSFGzbGj2589A&s);
+}
+
+.movies-row1 .movie-3 {
+  background-color: yellow;
+  height: 180px;
+  width: 120px;
+  position: absolute;
+  bottom: 90px;
+  left: 800px;
+  object-fit: contain;
+  overflow: hidden;
+  background-position: center;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvD2xYOkIyJeR5SUeor0vkH977fVNhOYVXew&s);
+}
+
+.movies-row1 .movie-4 {
+  background-color: yellow;
+  height: 180px;
+  width: 120px;
+  position: absolute;
+  bottom: 90px;
+  left: 1200px;
+  object-fit: contain;
+  overflow: hidden;
+  background-position: center;
+  background-image: url(https://preview.redd.it/g8geig1onoh81.jpg?auto=webp&s=23c000d781d5558ea96914ac05ad2dd23e415fdd);
+}
+
+
+
+.display-text-row1 {
+  display: flex;
+  position: relative;
+}
+
+.display-text-row1 .display-1 {
+  position: absolute;
+  bottom: 48px;
+  left: 60px;
+  color: white;
+  text-align: center;
+  margin-left: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.display-text-row1 .display-2 {
+  position: absolute;
+  bottom: 48px;
+  left: 390px;
+  color: white;
+  text-align: center;
+  margin-left: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.display-text-row1 .display-3 {
+  position: absolute;
+  bottom: 48px;
+  left: 760px;
+  color: white;
+  text-align: center;
+  margin-left: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.display-text-row1 .display-4 {
+  position: absolute;
+  bottom: 48px;
+  left: 1160px;
+  color: white;
+  text-align: center;
+  margin-left: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+}

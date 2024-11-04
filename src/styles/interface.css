@@ -1,0 +1,64 @@
+.interface{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+.bodyI{
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    margin-top: 90px;
+
+}
+
+.m-player{
+
+    height: 480px;
+    width: 650px;
+    /* background-color: yellowgreen; */
+    border-radius: 16px;
+}
+.m-player video{
+
+width: 100%;
+height: 100%;
+
+}
+
+.m-details{
+    height: 520px;
+    width: 690px;
+    background-color: black;
+    border: 2px solid red;
+    border-radius: 12px;
+    text-align: center;
+
+
+}
+
+.m-details h2 {
+    color: white;
+    font-size: 2.6rem;
+}
+
+.m-details p {
+    color: white;
+    margin: 90px;
+}
+
+
+.m-rating{
+    margin-top: 200px;
+}
+
+.m-rating #star{
+    color: red;
+    font-size: 1.5rem;
+    cursor: pointer;
+ 
+
+    
+}
