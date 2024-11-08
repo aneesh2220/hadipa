@@ -1,9 +1,9 @@
 .catalog {
-  height: 100%;
-  width: 100%;
   background-color: black;
   min-height: 100vh;
-  min-width: 100vh;
+  min-width: 100vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .headX {
@@ -11,7 +11,7 @@
   height: 60px;
   background-color: black;
   display: flex;
-  /* gap: 50px; */
+  gap: 50px;
   overflow: hidden;
   z-index: 1000;
 }
@@ -41,7 +41,7 @@
 }
 
 .headX .nav-list {
-  margin-left: 30%;
+  margin-left: 20%;
   gap: 18px;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
@@ -56,123 +56,183 @@
   cursor: pointer;
 }
 
-.movies-row1 {
-  background-color: black;
-  width: 100%;
-  height: 300px;
-  margin-top: 100px;
-  position: relative;
-}
 
-.movies-row1 div {
-  border-radius: 16px;
-  cursor: pointer;
-  transition: transform 0.2s ease-in-out;
-}
-
-.movies-row1 div:hover {
-  transform: scale(1.1);
-}
-
-.movies-row1 .movie-1 {
-  background-color: yellow;
-  height: 190px;
-  width: 150px;
-  position: absolute;
-  bottom: 90px;
-  left: 60px;
-  object-fit: contain;
-  overflow: hidden;
-  background-position: center;
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9A3EFxcN9DdYFdzfCTe6S5sy3X7J1em5IYQ&s);
-}
-
-.movies-row1 .movie-2 {
-  background-color: yellow;
-  height: 180px;
-  width: 120px;
-  position: absolute;
-  bottom: 90px;
-  left: 400px;
-  object-fit: contain;
-  overflow: hidden;
-  background-position: center;
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVfaCD49V6dYtzjHxwfGblNMSFGzbGj2589A&s);
-}
-
-.movies-row1 .movie-3 {
-  background-color: yellow;
-  height: 180px;
-  width: 120px;
-  position: absolute;
-  bottom: 90px;
-  left: 800px;
-  object-fit: contain;
-  overflow: hidden;
-  background-position: center;
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvD2xYOkIyJeR5SUeor0vkH977fVNhOYVXew&s);
-}
-
-.movies-row1 .movie-4 {
-  background-color: yellow;
-  height: 180px;
-  width: 120px;
-  position: absolute;
-  bottom: 90px;
-  left: 1200px;
-  object-fit: contain;
-  overflow: hidden;
-  background-position: center;
-  background-image: url(https://preview.redd.it/g8geig1onoh81.jpg?auto=webp&s=23c000d781d5558ea96914ac05ad2dd23e415fdd);
-}
-
-
-
-.display-text-row1 {
+.hamburger {
   display: flex;
+  flex-direction: column;
+  gap: 6px; /* Space between the lines */
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 30%;
+  margin-top: 10px;
+  display: none;
+}
+
+.hamburger span {
+  width: 25px; /* Width of the lines */
+  height: 3px; /* Thickness of the lines */
+  background-color: white; /* Color of the lines */
+  border-radius: 2px; /* Optional: Rounds the edges */
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5%;
+  margin: 10% 5% 5% 5%;
+  overflow-x: hidden;
+}
+
+
+.bodyX{
+  overflow-x: hidden;
+}
+
+
+
+
+/* .movie-showcase{
+  height: 300px;
+  overflow: hidden;
+  margin: 0;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2%;
+  margin: 10% 5% 5% 5%;
+  overflow-x: hidden;
+  width: 100%;
+
+}
+
+.movie-showcase div{
+  height: 100%;
+  width: 100%;
+}
+
+.movie-showcase .showCase1{
+  height: 200px;
+  width: 100%;
+  background-color: aqua;
+}
+
+.movie-showcase .showCase2{
+  height: 200px;
+  width: 100%;
+  background-color: aqua;
+
+} */
+
+
+.showcase {
   position: relative;
+  width: 100%;
+  height: 60vh; /* Height of the showcase */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6); /* Dark overlay */
 }
 
-.display-text-row1 .display-1 {
-  position: absolute;
-  bottom: 48px;
-  left: 60px;
-  color: white;
-  text-align: center;
-  margin-left: 8px;
-  font-weight: 600;
-  font-size: 1rem;
+.showcase-content {
+  max-width: 600px;
+  background-image: url("https://i.pinimg.com/564x/f9/79/97/f97997d31e34447fea988d4c318d0538.jpg");
+
 }
 
-.display-text-row1 .display-2 {
-  position: absolute;
-  bottom: 48px;
-  left: 390px;
-  color: white;
-  text-align: center;
-  margin-left: 8px;
-  font-weight: 600;
-  font-size: 1rem;
+.showcase-title {
+  font-size: 3rem;
+  margin: 0;
 }
 
-.display-text-row1 .display-3 {
-  position: absolute;
-  bottom: 48px;
-  left: 760px;
-  color: white;
-  text-align: center;
-  margin-left: 8px;
-  font-weight: 600;
-  font-size: 1rem;
+.showcase-description {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #ddd;
 }
 
-.display-text-row1 .display-4 {
-  position: absolute;
-  bottom: 48px;
-  left: 1160px;
-  color: white;
-  text-align: center;
-  margin-left: 8px;
-  font-weight: 600;
+.showcase-buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
   font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.btn-play {
+  background-color: #e50914;
+  color: white;
+}
+
+.btn-info {
+  background-color: rgba(109, 109, 110, 0.7);
+  color: white;
+}
+
+.showcase::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+  z-index: 1;
+}
+
+.showcase-content * {
+  position: relative;
+  z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 760px) {
+  .headX .nav-list {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+    margin-right: 20%;
+  }
+
+  .movie-grid {
+    grid-template-columns: 1rem 1rem 1rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .headX .nav-list {
+    display: none;
+  }
+
+  .headX h2 {
+    float: left;
+    margin-right: 40px;
+  }
+
+  .hamburger {
+    display: flex;
+    margin-right: 70%;
+  }
+
+  .movie-grid {
+    grid-template-columns: 1fr;
+    margin: 10% 0 0 0;
+  }
 }

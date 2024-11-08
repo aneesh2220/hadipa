@@ -10,4 +10,7 @@ let users = [
 ];
 
 
+
+
+console.log(users);
 export default users;

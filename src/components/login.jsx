@@ -40,13 +40,14 @@ let Login = () => {
   };
 
   return (
-    <div div className="AppX">
-      <div className="header">
+    <div className="AppX">
+      <div className="header" id="header">
         <h2 className="titleX">Hadipaa</h2>
       </div>
 
       <form onSubmit={handleClick}>
         <div class="inbox" id="inbox">
+        <p className="main-heading">Sign in</p>
           <input
             type="text"
             className="inputX"
@@ -55,6 +56,7 @@ let Login = () => {
             value={Username}
             onChange={(e) => setUsername(e.target.value)}
           />
+
           <input
             type="password"
             className="inputX"
@@ -66,6 +68,8 @@ let Login = () => {
 
           <p id="errorMessage"> {errorF}</p>
 
+          <a href="/signup" className="signup-btn">SignUp</a>
+          <br />
           <a href="/catalog">
             <button id="loginbtn" type="submit">
               Login
@@ -77,7 +81,8 @@ let Login = () => {
       <footer>
         <p>
           This is an online entertaining OTT platform designed by Aneesh Tiwari
-          , it provides you with an experience of free movie watching  ###   Hadippaa!Punjabii!!
+          , it provides you with an experience of free movie watching ###
+          Hadippaa!Punjabii!!
         </p>
 
         <p>Contact: tiwarianeesh629@gmail.com</p>

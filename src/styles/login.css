@@ -1,101 +1,160 @@
-  .header {
-    align-items: center;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    /* position: fixed; */
-    width: 100%;
-  }
-  
-  .header h2 {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: red;
-    font-size: 3.3rem;
-    padding-left: 45%;
-  }
-  
-  #inbox {
-    background-color: rgba(0, 0, 0, 0.8);
-    border-style: solid;
-   
-    /* border-radius: 15px; */
-    height: 400px;
-    width: 380px;
-    align-items: center;
-    margin-left: 38%;
-  }
-  
-  #inbox .inputX {
-    background-color: black;
-    border-style: solid;
-    border-radius: 8px;
-    color: red;
-    height: 34px;
-    transition: transform 0.1s ease-in;
-  }
-  
+.header {
+  align-items: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  /* position: fixed; */
+  width: 100%;
+}
 
-  #inbox .inputX:hover{
-    transform: scale(1.1);
-  }
+.header h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: red;
+  font-size: 3.3rem;
+  padding-left: 45%;
+}
 
-#indox .inputX:focus{
+#inbox {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-style: solid;
+
+  /* border-radius: 15px; */
+  height: 400px;
+  width: 380px;
+  align-items: center;
+  margin-left: 38%;
+}
+
+#inbox .inputX {
+  /* background-color: black; */
+  border-style: solid;
+  border-radius: 8px;
+  color: red;
+  height: 34px;
+  transition: transform 0.1s ease-in;
+  background: transparent;
+}
+
+#inbox .inputX:hover {
+  transform: scale(1.1);
+}
+
+#indox .inputX:focus {
   background-color: black;
 }
 
+#password {
+  margin-top: 40px;
+  margin-left: 90px;
+}
 
+#username {
+  margin-top: 60px;
+  margin-left: 90px;
+}
 
-  #password {
-    margin-top: 80px;
-    margin-left: 90px;
+#loginbtn {
+  background-color: red;
+  border-color: red;
+  border-style: solid;
+  border-radius: 8px;
+  color: white;
+
+  margin-left: 150px;
+  width: 80px;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+  margin-top: 10px;
+}
+
+#loginbtn:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 12px;
+  display: flex;
+  gap: 20px;
+  background-color: black;
+  width: 100%;
+  text-align: center;
+}
+
+#errorMessage {
+  color: red;
+  text-align: center;
+}
+
+.AppX {
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f562aaf4-5dbb-4603-a32b-6ef6c2230136/dh0w8qv-9d8ee6b2-b41a-4681-ab9b-8a227560dc75.jpg/v1/fill/w_1192,h_670,q_70,strp/the_netflix_login_background__canada__2024___by_logofeveryt_dh0w8qv-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvZjU2MmFhZjQtNWRiYi00NjAzLWEzMmItNmVmNmMyMjMwMTM2XC9kaDB3OHF2LTlkOGVlNmIyLWI0MWEtNDY4MS1hYjliLThhMjI3NTYwZGM3NS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.LOYKSxIDqfPwWHR0SSJ-ugGQ6bECF0yO6Cmc0F26CQs);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.signup-btn {
+  /* margin-bottom: 1100px; */
+  margin-left: 160px;
+  color: red;
+  width: 80px;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+  margin-top: 50px;
+}
+
+.main-heading {
+  color: white;
+  font-size: 2rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 10px;
   }
-  
+
+  .header h2 {
+    font-size: 3rem;
+    padding-left: 0;
+    padding-right: 40px;
+  }
+
+  #inbox {
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    border: 2px solid red;
+  }
+
+  #password,
   #username {
-    margin-top: 60px;
-    margin-left: 90px;
+    margin-left: 60px;
+    text-align: center;
+    width: 60%;
   }
-  
+
   #loginbtn {
-    background-color: red;
-    border-color: red;
-    border-style: solid;
-    border-radius: 8px;
-    margin-top: 110px;
-    margin-left: 140px;
-    color: white;
-    width: 80px;
-    cursor: pointer;
-    transition: transform 0.1s ease-in-out;
+    margin: 80px auto;
+    display: block;
+    margin: right 20px;
   }
-  
-  #loginbtn:hover {
-    transform: scale(1.1);
-  }
-  
+
   footer {
-    color: red;
-    font-family: Arial, Helvetica, sans-serif;
-  
-    font-size: 12px;
-    display: flex;
-    gap: 20px;
-    background-color: black;
-    width: 100%;
-    text-align: center;
+    flex-direction: column;
+    font-size: 10px;
+    padding: 10px;
   }
-  
-  #errorMessage {
-    color: red;
-    text-align: center;
-  }
-  
+
   .AppX {
-    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f562aaf4-5dbb-4603-a32b-6ef6c2230136/dh0w8qv-9d8ee6b2-b41a-4681-ab9b-8a227560dc75.jpg/v1/fill/w_1192,h_670,q_70,strp/the_netflix_login_background__canada__2024___by_logofeveryt_dh0w8qv-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvZjU2MmFhZjQtNWRiYi00NjAzLWEzMmItNmVmNmMyMjMwMTM2XC9kaDB3OHF2LTlkOGVlNmIyLWI0MWEtNDY4MS1hYjliLThhMjI3NTYwZGM3NS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.LOYKSxIDqfPwWHR0SSJ-ugGQ6bECF0yO6Cmc0F26CQs);
-    min-height: 100vh;
-    
-    
-    
+    background-image: none;
+    background-color: black;
   }
-  
+}

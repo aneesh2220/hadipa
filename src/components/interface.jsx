@@ -24,11 +24,6 @@ let Interface = ({ indexo }) => {
       <div className="bodyI">
         <div className="m-player">
           <VideoPlayer videoPath={MovieData[i].path}></VideoPlayer>
-
-
-
-
-
         </div>
 
         <div className="m-details">

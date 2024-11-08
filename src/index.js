@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Login from "./components/login.jsx";
 import Catalog from "./components/catalog.jsx";
 import Interface from "./components/interface.jsx";
+import Signup from "./components/signup.jsx";
 
 const router = createBrowserRouter(
   [
@@ -25,6 +26,10 @@ const router = createBrowserRouter(
   {
     path: "/interface/:i",
     element: <Interface/>,
+  },
+  {
+    path: "/signup",
+    element: <Signup/>,
   }
 ]
 );
@@ -33,7 +38,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />
-    {/* <Interface/> */}
+    {/* <Signup/> */}
   </React.StrictMode>
 );
 

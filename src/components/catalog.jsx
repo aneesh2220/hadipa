@@ -1,5 +1,7 @@
 import "../styles/catalog.css";
 import { useNavigate } from "react-router-dom";
+import MCard from "./card.jsx";
+import MovieData from "../data/movieData.js";
 
 let Catalog = () => {
   let navigate = useNavigate();
@@ -19,21 +21,39 @@ let Catalog = () => {
             <button className="dc">Dc</button>
           </nav>
         </div>
+        <button class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
 
       <div className="bodyX">
-        <div className="movies-row1">
-          <div className="movie-1" onClick={() => openI(0)}></div>
-          <div className="movie-2 " onClick={() => openI(1)}></div>
-          <div className="movie-3" onClick={() => openI(2)}></div>
-          <div className="movie-4" onClick={() => openI(3)}></div>
+        <div class="showcase">
+          <div class="showcase-content">
+            <h1 class="showcase-title">Featured Movie Title</h1>
+            <p class="showcase-description">
+              This is a short description of the featured movie.
+            </p>
+            <div class="showcase-buttons">
+              <button class="btn btn-play">Play</button>
+              <button class="btn btn-info">More Info</button>
+            </div>
+          </div>
         </div>
 
-        <div className="display-text-row1">
-          <p className="display-1">Avangers :2012</p>
-          <p className="display-2"> Avangers :endgame</p>
-          <p className="display-3">Black Panther: Wakanda forever</p>
-          <p className="display-4">Multiverse of madness </p>
+        <div className="movie-grid">
+          {MovieData.map((val, index) => {
+            return (
+              <div onClick={() => openI([index])}>
+                <MCard
+                  chachu={MovieData[index].mainImg}
+                  tau={MovieData[index].title}
+                  mamu={MovieData[index].availability}
+                />
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

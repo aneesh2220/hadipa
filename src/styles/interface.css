@@ -2,6 +2,7 @@
     background-color: black;
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
 }
 
 .bodyI{
@@ -61,4 +62,24 @@ height: 100%;
  
 
     
+}
+
+
+@media (max-width: 768px) {
+
+.bodyI{
+    display: flex;
+    flex-direction: column;
+}
+
+.m-player{
+    height: 300px;
+    width: 100%;
+}
+
+
+.m-details{
+    height: 600px;
+    width: 100%;
+}
 }
